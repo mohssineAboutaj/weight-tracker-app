@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*----*/
@@ -16,8 +16,8 @@ body {
 
 .container {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -46,30 +46,30 @@ aside {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: none;
-  flex-direction: none;
+      -ms-flex-direction: none;
+          flex-direction: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 aside .tracker_info {
-  padding: 0 10px;
-  height: 98%;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: none;
-  flex-direction: none;
+      -ms-flex-direction: none;
+          flex-direction: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  height: 98%;
+  width: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ecececad;
 }
 
@@ -86,14 +86,14 @@ aside .tracker_info .circle_container {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: none;
-  flex-direction: none;
+      -ms-flex-direction: none;
+          flex-direction: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 aside .tracker_info .circle_container .tracker_info_button {
@@ -106,9 +106,10 @@ aside .tracker_info .circle_container .tracker_info_button {
   font-family: "Pacifico", cursive;
   font-size: 24px;
   text-shadow: 4px 4px 4px white;
+  outline: none;
 }
 
-aside .tracker_info .pole {
+.pole {
   width: 8%;
   height: 262px;
   display: -webkit-box;
@@ -116,37 +117,80 @@ aside .tracker_info .pole {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-aside .tracker_info .pole span {
+.pole span {
   height: 33.33%;
   width: 100%;
   -webkit-box-shadow: 4px 4px 4px #353434;
-  box-shadow: 4px 4px 4px #353434;
+          box-shadow: 4px 4px 4px #353434;
 }
 
-aside .tracker_info .pole span:nth-child(1) {
+.pole span:nth-child(1) {
   background-color: #aac5c5;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-aside .tracker_info .pole span:nth-child(2) {
+.pole span:nth-child(2) {
   background-color: #484647ed;
 }
 
-aside .tracker_info .pole span:nth-child(3) {
+.pole span:nth-child(3) {
   background-color: #868380fa;
 }
 
-aside .tracker_info .pole span:nth-child(4) {
+.pole span:nth-child(4) {
   background-color: black;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+/* here flip style */
+section .menu_button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 10px 10px;
+  font-family: "Pacifico", cursive;
+}
+
+section .menu_pole {
+  height: 100px;
+  width: 16px;
+}
+
+section .menu_button {
+  padding: 20px;
+  background-color: black;
+  width: 63%;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+section button {
+  width: 100%;
+  padding: 5px;
+  background-color: #c7c7c7;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+section .list-group {
+  margin-left: 10px;
+  font-family: "Pacifico", cursive;
 }
 /*# sourceMappingURL=index.css.map */
