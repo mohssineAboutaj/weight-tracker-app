@@ -5,6 +5,10 @@ body {
     margin:0;
     box-sizing:border-box;   
 }
+button {
+    outline:none;
+}
+
 @mixin flexElement($direction,$alignItem){
     display:flex;
     flex-direction:$direction;
@@ -32,9 +36,9 @@ $gooelFont: 'Pacifico', cursive;
 middle box 
 --*/
 .middle_box {
-    border:$borderColor;
     width: 1100px;
     height:600px;
+    box-shadow: 4px 4px 4px black;
     section {
         width:40%; 
     }

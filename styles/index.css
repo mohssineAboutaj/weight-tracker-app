@@ -6,6 +6,10 @@ body {
           box-sizing: border-box;
 }
 
+button {
+  outline: none;
+}
+
 /*----*/
 .container,
 .middle_box {
@@ -28,9 +32,10 @@ body {
 middle box 
 --*/
 .middle_box {
-  border: 1px solid #5a5a5a;
   width: 1100px;
   height: 600px;
+  -webkit-box-shadow: 4px 4px 4px black;
+          box-shadow: 4px 4px 4px black;
 }
 
 .middle_box section {
@@ -41,6 +46,7 @@ middle box
 aside {
   width: 60%;
   padding: 10px;
+  background-color: #343a4057;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,13 +76,14 @@ aside .tracker_info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ecececad;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8efea), to(#ffff0045));
+  background-image: linear-gradient(#e8efea, #ffff0045);
 }
 
 aside .tracker_info .circle_container {
-  width: 58%;
+  height: 132px;
+  width: 356px;
   border: 1px solid #5a5a5a;
-  height: 23%;
   border-top-left-radius: 70px;
   border-bottom-left-radius: 70px;
   background-color: black;
@@ -152,6 +159,11 @@ aside .tracker_info .circle_container .tracker_info_button {
 }
 
 /* here flip style */
+section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8efea), to(#ffff0045));
+  background-image: linear-gradient(#e8efea, #ffff0045);
+}
+
 section .menu_button_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,5 +204,36 @@ section button {
 section .list-group {
   margin-left: 10px;
   font-family: "Pacifico", cursive;
+  color: #000000;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+section .list-group li {
+  cursor: pointer;
+  -webkit-transition: text-shadow .4s ease-in;
+  transition: text-shadow .4s ease-in;
+}
+
+section .list-group li:nth-child(odd) {
+  background-color: #555354;
+}
+
+section .list-group li:nth-child(even) {
+  background-color: #888582;
+}
+
+section .list-group li:hover {
+  text-shadow: 4px 4px 4px white;
+}
+
+/*aside menu drop down for list group ul */
+.active {
+  -webkit-transform: perspective(1000px) rotateX(-90deg);
+          transform: perspective(1000px) rotateX(-90deg);
 }
 /*# sourceMappingURL=index.css.map */

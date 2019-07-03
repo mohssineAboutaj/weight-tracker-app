@@ -1,4 +1,6 @@
+
 section {
+    background-image: linear-gradient(#e8efea, #ffff0045);
     .menu_button_container {
         @include flexElement(row,center);
         margin:10px 0px 10px 10px;
@@ -7,7 +9,6 @@ section {
     .menu_pole{
         height: 100px;
         width: 16px;
-        
     }
     .menu_button{
         padding: 20px;
@@ -23,11 +24,31 @@ section {
         border: none;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-       
     }
     .list-group{
         margin-left:10px;
-        font-family: $gooelFont;
+        font-family: $gooelFont; 
+        color:#000000;
+        transform-origin: top; 
+        transition:transform 1s ease-in-out;
+        li{
+            cursor:pointer;
+            transition:text-shadow .4s ease-in;
+            &:nth-child(odd){
+                 background-color: #555354;    
+            }
+            &:nth-child(even){
+                background-color: #888582;
+            }
+            &:hover {
+                text-shadow:4px 4px 4px white;
+            }
+        }
     }
+}
+
+/*aside menu drop down for list group ul */ 
+.active{
+    transform: perspective(1000px) rotateX(-90deg);   
 }
 
