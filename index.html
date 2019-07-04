@@ -29,7 +29,7 @@
 				</div>
 				<ul class="list-group">
 					<li class="list-group-item">histories</li>
-					<li class="list-group-item">actual weight</li>
+					<li class="list-group-item" data-toggle="modal" data-target="#actual-weight">actual weight</li>
 					<li class="list-group-item">weight comy</li>
 					<li class="list-group-item">plot a chart</li>
 				</ul>
@@ -70,16 +70,46 @@
 				<div class="modal-body">
 					<form>
 						<div class="form-row">
-							<label class="sr-only" for="input1">
-								input1
+							<label class="sr-only" for="input-weight">
+								weight
 							</label>
 							<div class="input-group">
 								<div class="input-group-prepend">
 									<div class="input-group-text">
-										<i class="fa fa-fw fa-at"></i>
+										<i class="fa fa-fw fa-balance-scale"></i>
 									</div>
 								</div>
-								<input type="text" class="form-control" id="input1" placeholder="input1">
+								<input name="weight" type="number" class="form-control" id="input-weight" placeholder="type the weight">
+							</div>
+						</div>
+						<div class="form-row">
+							<label class="sr-only" for="input-unit">
+								unit
+							</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-fw fa-weight-hanging"></i>
+									</div>
+								</div>
+								<select name="unit" id="input-unit" class="form-control">
+									<option value="---">---choose a unit---</option>
+									<!-- fill by javaScript -->
+									<!-- khdm b loop & appenChild wla khliha tan3mrha ana -->
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<label class="sr-only" for="input-date">
+								date
+							</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-fw fa-calendar"></i>
+									</div>
+								</div>
+								<input name="date" type="date" class="form-control" id="input-date">
 							</div>
 						</div>
 						<div class="form-row">
