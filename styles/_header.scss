@@ -1,0 +1,29 @@
+header {
+    margin:10px 0px 0px 10px;
+    border:$borderColor;
+    font-family: $headerFont;
+    position:absolute;
+    width:234px;
+    //@include flexElement(column,center);
+    .actual_weight h5{
+        text-align:center;
+        background-color:#f7f9cc;
+        padding:10px 0px;
+        margin:0;
+    }
+    .weight_values{
+        background-color:#c7c7c7;
+        padding:10px 10px;
+    }
+    .motivational_message {
+        padding:10px 10px;
+        background-color: #e9efe8;
+    }
+    .span_value{
+        color :red;
+        font-size:20px;
+        background-color:white;
+        padding:2px 4px;
+        border-radius: 2px;
+    }
+}

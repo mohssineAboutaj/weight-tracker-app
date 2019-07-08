@@ -14,10 +14,9 @@ aside {
     .circle_container {
       height: 132px;
       width: 356px;
-      border: 1px solid #5a5a5a;
       border-top-left-radius: 70px;
       border-bottom-left-radius: 70px;
-      background-color: black;
+      background-color: #f3f7d1;
       border-right: none;
       @include flexElement(none, center);
       justify-content: center;

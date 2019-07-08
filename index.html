@@ -8,11 +8,24 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
 	<title>Weight tracker app</title>
 </head>
 
 <body>
+	<header>
+		<div class="actual_weight">
+			<h5>Your actual weight</h5>
+		</div>
+		<div class="weight_values">
+			<span>Weight:</span><span> <span class="span_value">50</span> kg</span>
+		</div>
+		<div class="motivational_message">
+			<!-- A message from an API  should be here , it's gonna be a motivational message -->
+		</div>
+	</header>
 	<div class="container">
+		  
 		<div class="middle_box">
 			<section>
 				<div class="menu_button_container">
@@ -29,7 +42,7 @@
 				</div>
 				<ul class="list-group">
 					<li class="list-group-item">histories</li>
-					<li class="list-group-item" data-toggle="modal" data-target="#actual-weight">actual weight</li>
+					<li class="list-group-item">actual weight</li>
 					<li class="list-group-item">weight comy</li>
 					<li class="list-group-item">plot a chart</li>
 				</ul>
@@ -37,7 +50,7 @@
 			<aside>
 				<div class="tracker_info">
 					<div class="circle_container">
-						<button class="tracker_info_button">
+						<button class="tracker_info_button"  data-toggle="modal" data-target="#actual-weight">
 							Actual weight
 						</button>
 					</div>
@@ -53,78 +66,52 @@
 
 		</div>
 	</div>
-
-	<!-- Modal -->
-	<div class="modal fade" id="actual-weight" tabindex="-1" role="dialog" aria-labelledby="actualWeightLabel"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">actual-weight form</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">
-							<i class="fa fa-fw fa-times-circle"></i>
-						</span>
-					</button>
+		
+<!-- Modal -->
+<div class="modal fade" id="actual-weight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Enter your weight</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+	 <form id="modal_form">
+		<div class="modal-body">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+						<i class="fa fa-fw fa-balance-scale"></i>
+					</div>
 				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-row">
-							<label class="sr-only" for="input-weight">
-								weight
-							</label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<div class="input-group-text">
-										<i class="fa fa-fw fa-balance-scale"></i>
-									</div>
-								</div>
-								<input name="weight" type="number" class="form-control" id="input-weight" placeholder="type the weight">
-							</div>
-						</div>
-						<div class="form-row">
-							<label class="sr-only" for="input-unit">
-								unit
-							</label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<div class="input-group-text">
-										<i class="fa fa-fw fa-weight-hanging"></i>
-									</div>
-								</div>
-								<select name="unit" id="input-unit" class="form-control">
-									<option value="---">---choose a unit---</option>
-									<!-- fill by javaScript -->
-									<!-- khdm b loop & appenChild wla khliha tan3mrha ana -->
-								</select>
-							</div>
-						</div>
-						<div class="form-row">
-							<label class="sr-only" for="input-date">
-								date
-							</label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<div class="input-group-text">
-										<i class="fa fa-fw fa-calendar"></i>
-									</div>
-								</div>
-								<input name="date" type="date" class="form-control" id="input-date">
-							</div>
-						</div>
-						<div class="form-row">
-							<button type="reset" class="btn btn-danger m-2" data-dismiss="modal">
-								<i class="fa fa-fw fa-broom"></i>
-								Reset &amp; Close
-							</button>
-							<button type="sub" class="btn btn-success m-2">
-								<i class="fa fa-fw fa-save"></i>
-								Save changes
-							</button>
-						</div>
-					</form>
-				</div>
+				<input name="weight" type="number" class="form-control" id="input-weight" placeholder="type the weight">
 			</div>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+						<i class="fa fa-fw fa-calendar"></i>
+					</div>
+				</div>
+				<input name="date" type="date" class="form-control" id="input-date">
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div>
+				<button type="reset" class="btn btn-danger m-2" data-dismiss="modal">
+					<i class="fa fa-fw fa-broom"></i>
+					Reset &amp; Close
+				</button>
+				<button type="sub" class="btn btn-success m-2"">
+					<i class="fa fa-fw fa-save"></i>
+					Save changes
+				</button>
+			</div>
+		</div>
+	 </form>
+	  </div>
+	</div>
+  </div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

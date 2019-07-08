@@ -4,10 +4,18 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #15151526;
 }
 
 button {
   outline: none;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+button:hover {
+  background-color: #024e9a7d;
+  color: white;
 }
 
 /*----*/
@@ -40,6 +48,39 @@ middle box
 
 .middle_box section {
   width: 40%;
+}
+
+header {
+  margin: 10px 0px 0px 10px;
+  border: 1px solid #5a5a5a;
+  font-family: "Concert One", cursive;
+  position: absolute;
+  width: 234px;
+}
+
+header .actual_weight h5 {
+  text-align: center;
+  background-color: #f7f9cc;
+  padding: 10px 0px;
+  margin: 0;
+}
+
+header .weight_values {
+  background-color: #c7c7c7;
+  padding: 10px 10px;
+}
+
+header .motivational_message {
+  padding: 10px 10px;
+  background-color: #e9efe8;
+}
+
+header .span_value {
+  color: red;
+  font-size: 20px;
+  background-color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 /*aside */
@@ -83,10 +124,9 @@ aside .tracker_info {
 aside .tracker_info .circle_container {
   height: 132px;
   width: 356px;
-  border: 1px solid #5a5a5a;
   border-top-left-radius: 70px;
   border-bottom-left-radius: 70px;
-  background-color: black;
+  background-color: #f3f7d1;
   border-right: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +226,7 @@ section .menu_pole {
 
 section .menu_button {
   padding: 20px;
-  background-color: black;
+  background-color: #f3f7d1;
   width: 63%;
   border-top-right-radius: 70px;
   border-bottom-right-radius: 70px;
@@ -220,11 +260,11 @@ section .list-group li {
 }
 
 section .list-group li:nth-child(odd) {
-  background-color: #555354;
+  background-color: #85640454;
 }
 
 section .list-group li:nth-child(even) {
-  background-color: #888582;
+  background-color: #8885822e;
 }
 
 section .list-group li:hover {
@@ -235,5 +275,22 @@ section .list-group li:hover {
 .active {
   -webkit-transform: perspective(1000px) rotateX(-90deg);
           transform: perspective(1000px) rotateX(-90deg);
+}
+
+.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-group:first-child {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
