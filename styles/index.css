@@ -271,6 +271,11 @@ section .list-group li:hover {
   text-shadow: 4px 4px 4px white;
 }
 
+section .list-group li a {
+  text-decoration: none;
+  color: black;
+}
+
 /*aside menu drop down for list group ul */
 .active {
   -webkit-transform: perspective(1000px) rotateX(-90deg);
