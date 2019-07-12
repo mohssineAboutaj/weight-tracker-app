@@ -298,4 +298,23 @@ section .list-group li a {
 .input-group:first-child {
   margin-bottom: 20px;
 }
+
+.history_wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.history_wrapper h1 {
+  background-color: white;
+  display: inline-block;
+  padding: 0px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  margin-bottom: 80px;
+}
+
+.history_wrapper td {
+  vertical-align: middle;
+}
 /*# sourceMappingURL=index.css.map */
