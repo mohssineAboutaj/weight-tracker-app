@@ -15,6 +15,15 @@
     "scss"
   ],
   "author": "karim & mohssine aboutaj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohssineAboutaj/weight-tracker-app.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohssineAboutaj/weight-tracker-app/issues"
+  },
+  "homepage": "https://github.com/mohssineAboutaj/weight-tracker-app#readme",
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
