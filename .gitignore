@@ -1,0 +1,17 @@
+# ignore folders/directories
+node_modules/
+dist/
+.vscode/
+
+# ignore files
+*.log
+*.lock
+package-lock.json# ignore folders/directories
+node_modules/
+dist/
+.vscode/
+
+# ignore files
+*.log
+*.lock
+package-lock.json
