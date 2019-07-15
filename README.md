@@ -5,13 +5,12 @@ This is a simple weight tracker app project
 
 ## Run dev server (with live reload)
 ```
-npm start
+npm run dev
 ```
 or
 ```
-yarn start
+yarn dev
 ```
-
 
 ## Build the project
 ```
