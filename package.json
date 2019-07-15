@@ -1,0 +1,38 @@
+{
+  "name": "weight-tracker-app",
+  "version": "1.0.0",
+  "description": "A simple weight tracker app",
+  "scripts": {
+    "start": "webpack",
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "keywords": [
+    "weight",
+    "app",
+    "tracker",
+    "webpack",
+    "scss"
+  ],
+  "author": "karim & mohssine aboutaj",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
